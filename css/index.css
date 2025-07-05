@@ -1,81 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}   
-body{
-    background-color: #FFF200;
-    overflow: hidden;
+  font-variation-settings: "wdth" 100;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
+
+body {
+  background-color: #FFF200;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF200;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+nav img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* NAV MENU */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+/* ACTIVE TAB */
+#active-tab {
+  background-color: black;
+  border-radius: 45px;
+}
+
+#active-tab a {
+  color: #FFF200;
+}
+
+/* SUN ICON */
+.sun-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+}
+
+/* MAIN HEADING */
+h1 {
+  margin-top: 40px;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* RESPONSIVE IMAGE */
+img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
     align-items: center;
-    background-color: #FFF200;
-    padding-bottom: 20px;
-    position: sticky;
-    top:0;
-}
-ul{
-    display: flex;
-    justify-content: center;
-    /* padding: 25px; */
-    margin-right: 30px;
-    margin-top: auto;
-    list-style-type: none;
-    margin-top: 15px;
-}
-li{
-    /* padding-left: 20px; */
-    display: flex;
-    align-content: center;
     text-align: center;
-    margin-left: 15px;
-}
-li a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    font-size: 35px;
-}
-nav img{
-    margin-left: 15px;
-    margin-top: 15px;
-    width: 120px;
-    height: auto;
-}
-#active-tab{
-    display: block;
-    background-color: black;
-    color: #FFF200;
-    border-radius: 45px;
-}
-#active-tab a{
-    color: #FFF200;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  li a {
+    font-size: 1.1rem;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  .sun-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
 }
 
-.sun-icon{
-    width: 50px;
-    height: 50px;
-    margin-top: -5px;
-}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
 
-h1{
-    margin-top: 45px;
-    font-size: 65px;
-    text-align: center;
-}
-img{
-    display: block;
-    width: 500px;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+  li a {
+    font-size: 1rem;
+  }
+
+  nav img {
+    width: 70px;
+  }
 }
