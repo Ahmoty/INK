@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 @import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
@@ -9,9 +12,6 @@
   font-variation-settings:
     "wdth" 100;
 }   
-body{
-    background-color: black;
-}
 nav{
     display: flex;
     justify-content: space-between;
