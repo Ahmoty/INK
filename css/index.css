@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVIGATION BAR */
+/* ========== NAVIGATION ========== */
 nav {
   display: flex;
   justify-content: space-between;
@@ -24,25 +24,31 @@ nav {
   padding: 10px 20px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
   flex-wrap: wrap;
 }
 
-/* LOGO */
+/* Logo */
 nav img {
-  width: 100px;
+  width: 90px;
   height: auto;
   margin-top: 10px;
 }
 
-/* NAV MENU */
+/* Sun icon */
+.sun-icon {
+  width: 35px;
+  height: 35px;
+  margin-top: -5px;
+}
+
+/* Nav menu */
 ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  list-style-type: none;
-  margin-top: 10px;
-  margin-right: 20px;
+  list-style: none;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -51,13 +57,14 @@ li {
 }
 
 li a {
+  display: block;
   text-decoration: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px 15px;
   font-size: 1.2rem;
 }
 
-/* ACTIVE TAB */
+/* Active tab */
 #active-tab {
   background-color: black;
   border-radius: 45px;
@@ -67,22 +74,15 @@ li a {
   color: #FFF200;
 }
 
-/* SUN ICON */
-.sun-icon {
-  width: 40px;
-  height: 40px;
-  margin-top: -5px;
-}
-
-/* MAIN HEADING */
+/* ========== MAIN TITLE ========== */
 h1 {
   margin-top: 40px;
-  font-size: 3rem;
+  font-size: 2.2rem;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
-/* RESPONSIVE IMAGE */
+/* ========== IMAGES ========== */
 img {
   display: block;
   max-width: 90%;
@@ -90,7 +90,9 @@ img {
   margin: 20px auto;
 }
 
-/* MEDIA QUERIES */
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets and medium screens */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -101,11 +103,10 @@ img {
   ul {
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
   }
 
   li {
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   li a {
@@ -122,20 +123,36 @@ img {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
+/* Mobile phones */
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.7rem;
-  }
-
-  li a {
-    font-size: 1rem;
+  nav {
+    padding: 10px;
   }
 
   nav img {
     width: 70px;
+  }
+
+  li a {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+
+  .sun-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 25px;
+  }
+
+  img {
+    max-width: 95%;
   }
 }
