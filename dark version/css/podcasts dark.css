@@ -16,8 +16,9 @@ body{
 ::-webkit-scrollbar {
     width: 10px;
   }
+
   ::-webkit-scrollbar-thumb {
-    background: #FFF200;
+    background:#FFF200;
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -41,7 +42,6 @@ ul{
     margin-top: 15px;
 }
 li{
-    /* padding-left: 20px; */
     display: flex;
     align-content: center;
     text-align: center;
@@ -75,20 +75,18 @@ nav img{
     margin-top: -5px;
 }
 h1{
+    color: #FFF200;
     margin-top: 45px;
     font-size: 65px;
     text-align: center;
     padding-bottom: 55px;
-    color: #FFF200;
 }
-.podcasts{
+main{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    width:100%;       
-    align-items:flex-start; 
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    gap: 20px;
 }
 .pod-card{
     display: inline-block;
@@ -120,7 +118,7 @@ h1{
     padding: 10px;
     font-size: 35px;
     border-radius: 45px;
-    color: #FFF200;
+    color:#FFF200;
 }
 .pod-link:visited{
     color: #FFF200;
