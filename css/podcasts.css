@@ -81,14 +81,12 @@ h1{
     text-align: center;
     padding-bottom: 55px;
 }
-.podcasts{
+main{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    width:100%;       
-    align-items:flex-start; 
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    gap: 20px;
 }
 .pod-card{
     display: inline-block;
